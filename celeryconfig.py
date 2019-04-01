@@ -5,8 +5,8 @@
 from __future__ import absolute_import
 from datetime import timedelta
 #这一次创建 app，并没有直接指定 broker(消息中间件来接收和发送任务消息) 和 backend(存储结果)。而是在配置文件中。
-CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379/5'
-BROKER_URL = 'redis://127.0.0.1:6379/6'
+CELERY_RESULT_BACKEND = 'redis://118.24.255.219:6380/5'
+BROKER_URL = 'redis://118.24.255.219:6380/6'
 CELERY_TIMEZONE='Asia/Shanghai'
 CELERY_ENABLE_UTC=True
 CELERY_ACCEPT_CONTENT=['json']
